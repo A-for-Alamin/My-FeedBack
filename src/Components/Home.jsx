@@ -1,5 +1,6 @@
 import Carousel from "./Home/Carousel";
 import Category from "./Home/Category";
+import Explore from "./Home/Explore";
 import Header from "./Home/Header";
 import Trend from "./Home/Trends";
 
@@ -10,6 +11,7 @@ function Home() {
       <Category />
       <Carousel />
       <Trend />
+      <Explore />
     </>
   );
 }
