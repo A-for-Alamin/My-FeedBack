@@ -2,6 +2,7 @@ import Carousel from "./Home/Carousel";
 import Category from "./Home/Category";
 import Explore from "./Home/Explore";
 import Header from "./Home/Header";
+import Recent from "./Home/Recent";
 import Trend from "./Home/Trends";
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
       <Carousel />
       <Trend />
       <Explore />
+      <Recent />
     </>
   );
 }
