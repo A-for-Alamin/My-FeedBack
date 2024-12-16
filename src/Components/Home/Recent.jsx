@@ -7,7 +7,7 @@ import "swiper/css";
 
 // import required modules
 import { Navigation } from "swiper/modules";
-import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import { IoArrowBack } from "react-icons/io5";
 import { GoStarFill } from "react-icons/go";
 
 function Recent() {
@@ -22,7 +22,6 @@ function Recent() {
             spaceBetween={30}
             navigation={{
               nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
             }}
             breakpoints={{
               640: {
@@ -93,9 +92,6 @@ function Recent() {
             )}
           </Swiper>
 
-          {/* <div className="swiper-button-prev absolute top-1/2 left-6 text-[3rem] p-2 rounded-full bg-white z-10 cursor-pointer hidden md:block">
-            <IoArrowForward className="rotate-180" />
-          </div> */}
           <div className="swiper-button-next absolute top-1/2 right-6 text-[3rem] p-2 rounded-full bg-white z-10 cursor-pointer hidden md:block">
             <IoArrowBack className="rotate-180" />
           </div>

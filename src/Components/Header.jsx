@@ -1,12 +1,12 @@
 import { RiSearchLine } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
 import { RxHamburgerMenu } from "react-icons/rx";
-import MyButton from "../Common/Button";
+import MyButton from "./Common/Button.jsx";
 import { Autocomplete, AutocompleteItem } from "@nextui-org/react";
 // Category Import from Json File
-import categories from "../lib/category.jsx";
+import categories from "./lib/category.jsx";
 // Category Import from Json File
-import countries from "../lib/country.json";
+import countries from "./lib/country.json";
 
 import {
   Drawer,

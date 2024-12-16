@@ -1,7 +1,8 @@
+import Footer from "./footer";
 import Carousel from "./Home/Carousel";
 import Category from "./Home/Category";
 import Explore from "./Home/Explore";
-import Header from "./Home/Header";
+import Header from "./Header";
 import Recent from "./Home/Recent";
 import Trend from "./Home/Trends";
 
@@ -14,6 +15,7 @@ function Home() {
       <Trend />
       <Explore />
       <Recent />
+      <Footer />
     </>
   );
 }
