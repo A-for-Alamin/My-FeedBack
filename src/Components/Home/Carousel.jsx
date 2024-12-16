@@ -50,7 +50,7 @@ export default function Carousel() {
           >
             {cardDatas.map((cardData, i) => (
               <SwiperSlide className="flex justify-center" key={i}>
-                <Card {...cardData} />
+                <Card {...cardData} className="w-[285px]" />
               </SwiperSlide>
             ))}
           </Swiper>

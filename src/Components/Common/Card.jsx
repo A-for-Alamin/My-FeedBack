@@ -1,11 +1,17 @@
 import { GoStarFill } from "react-icons/go";
+import { twMerge } from "tailwind-merge";
 
-function Card({ img, label, des, reting, review }) {
+function Card({ img, label, des, reting, review, className }) {
   return (
     <>
-      <div className="w-[285px] h-[363px] rounded-xl bg-white overflow-hidden">
+      <div
+        className={twMerge(
+          "h-[363px] rounded-xl bg-[#F8F8F8] overflow-hidden",
+          className
+        )}
+      >
         <img src={`./img/${img}`} alt="Card Image" />
-        <div className="p-2 text-[#8F8F8F] text-sm">
+        <div className="p-3 text-[#8F8F8F] text-sm">
           <h2 className="font-semibold text-[19px] text-black mb-1">{label}</h2>
           <p>{des}</p>
           <div className="flex items-center gap-2 mt-5">
