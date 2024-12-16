@@ -1,0 +1,46 @@
+[
+    {
+        "label": "Restaurants",
+        "icon": ""
+    },
+    {
+        "label": "Hotels",
+        "icon": ""
+    },
+    {
+        "label": "Home services",
+        "icon": ""
+    },
+    {
+        "label": "Shopping",
+        "icon": ""
+    },
+    {
+        "label": "Car Location",
+        "icon": ""
+    },
+    {
+        "label": "Beauty & Spa",
+        "icon": ""
+    },
+    {
+        "label": "Park",
+        "icon": ""
+    },
+    {
+        "label": "Museum",
+        "icon": ""
+    },
+    {
+        "label": "Car Wash",
+        "icon": ""
+    },
+    {
+        "label": "Bars",
+        "icon": ""
+    },
+    {
+        "label": "Gyms",
+        "icon": ""
+    }
+]
