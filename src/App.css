@@ -10,3 +10,19 @@
   background: #1677bd;
   border-radius: 5px;
 }
+
+
+
+/* Swiper Pagination Bullet  */
+.swiper-pagination-bullet {
+  background: #fff !important;
+}
+
+
+/* Swiper Navigation  */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  scale: 1.1;
+  transition: 150ms;
+}
+

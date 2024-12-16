@@ -1,0 +1,38 @@
+[
+  {
+    "img": "card1.png",
+    "label": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "reting": 5,
+    "review": 876
+  },
+  {
+    "img": "card2.png",
+    "label": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "reting": 5,
+    "review": 876
+  },
+  {
+    "img": "card3.png",
+    "label": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "reting": 15,
+    "review": 876
+  },
+  {
+    "img": "card4.png",
+    "label": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "reting": 5,
+    "review": 876
+  },
+  {
+    "img": "card1.png",
+    "label": "Bottega",
+    "des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+    "reting": 5,
+    "review": 876
+  }
+  
+]

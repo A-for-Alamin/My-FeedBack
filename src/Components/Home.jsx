@@ -1,3 +1,4 @@
+import Carousel from "./Home/Carousel";
 import Category from "./Home/Category";
 import Header from "./Home/Header";
 
@@ -6,6 +7,7 @@ function Home() {
     <>
       <Header />
       <Category />
+      <Carousel />
     </>
   );
 }

@@ -6,7 +6,7 @@ import { IoGridOutline } from "react-icons/io5";
 function Category() {
   return (
     <>
-      <div className="container flex justify-between gap-5 pt-6 md:pt-10 pb-3 px-2 overflow-x-scroll lg:overflow-x-visible categScrollBar">
+      <div className="container flex justify-between gap-5 pt-5 md:pt-10 pb-3 px-2 overflow-x-scroll lg:overflow-x-visible categScrollBar">
         <div className="flex flex-col items-center gap-3 text-xl md:text-3xl">
           <IoGridOutline />
           <p className="text-[15.5px]">All</p>
