@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./Components/Header";
+import Home from "./Components/Home";
 // 1. import `NextUIProvider` component
 import { NextUIProvider } from "@nextui-org/react";
 
@@ -8,7 +8,7 @@ function App() {
     <>
       {/* Wrap NextUIProvider at the root of your app */}
       <NextUIProvider>
-        <Header />
+        <Home />
       </NextUIProvider>
     </>
   );

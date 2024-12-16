@@ -1,12 +1,12 @@
 import { RiSearchLine } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
 import { RxHamburgerMenu } from "react-icons/rx";
-import MyButton from "./Common/Button";
+import MyButton from "../Common/Button";
 import { Autocomplete, AutocompleteItem } from "@nextui-org/react";
 // Category Import from Json File
-import categorys from "./lib/category.json";
+import categories from "../lib/category.jsx";
 // Category Import from Json File
-import countries from "./lib/country.json";
+import countries from "../lib/country.json";
 
 import {
   Drawer,
@@ -40,7 +40,7 @@ function Header() {
                 selectorIcon={""}
                 label="restaurant, hotel, service...."
               >
-                {categorys.map((category, i) => (
+                {categories.map((category, i) => (
                   <AutocompleteItem key={i}>{category.label}</AutocompleteItem>
                 ))}
               </Autocomplete>
@@ -90,7 +90,7 @@ function Header() {
                         radius="full"
                         label="restaurant, hotel, service...."
                       >
-                        {categorys.map((category, i) => (
+                        {categories.map((category, i) => (
                           <AutocompleteItem key={i}>
                             {category.label}
                           </AutocompleteItem>
@@ -108,7 +108,9 @@ function Header() {
                         ))}
                       </Autocomplete>
 
-                      <MyButton className="w-full">Search...</MyButton>
+                      <MyButton className="w-full" onClick={onClose}>
+                        Search...
+                      </MyButton>
                     </div>
 
                     <MyButton className="text-sm lg:text-[15px] bg-black text-nowrap mt-10">
