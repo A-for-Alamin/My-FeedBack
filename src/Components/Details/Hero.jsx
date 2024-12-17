@@ -2,8 +2,6 @@ import { GoStarFill } from "react-icons/go";
 import { FaClock, FaLocationDot } from "react-icons/fa6";
 
 function Hero({ heroimg, logo, name, rating, reviews, description, address }) {
-  console.log(logo);
-
   return (
     <>
       <section
@@ -47,7 +45,7 @@ function Hero({ heroimg, logo, name, rating, reviews, description, address }) {
           </div>
         </div>
         <img
-          src={`./img/${logo}`}
+          src={`../img/${logo}`}
           className="z-10 left-1/2 -translate-x-1/2 absolute top-full -translate-y-1/2"
         />
       </section>

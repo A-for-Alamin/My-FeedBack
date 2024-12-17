@@ -17,16 +17,16 @@ function Discover() {
           </div>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-2 lg:gap-5">
             <div>
-              <img src="./img/discover1.png" />
+              <img src="../img/discover1.png" />
             </div>
             <div className="space-y-5">
               <div className="flex flex-col md:flex-row gap-2 md:gap-10 lg:gap-5">
-                <img src="./img/discover2.png" />
-                <img src="./img/discover3.png" />
+                <img src="../img/discover2.png" />
+                <img src="../img/discover3.png" />
               </div>
               <div className="flex flex-col md:flex-row gap-2 md:gap-10 lg:gap-5">
-                <img src="./img/discover4.png" />
-                <img src="./img/discover5.png" />
+                <img src="../img/discover4.png" />
+                <img src="../img/discover5.png" />
               </div>
             </div>
           </div>
