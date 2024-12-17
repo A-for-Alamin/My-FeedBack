@@ -3,6 +3,7 @@ import datas from "../lib/large_business_data.json";
 import MyButton from "../Common/Button";
 import Card from "../Common/Card";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Trend() {
   const [more, setMore] = useState(12);
@@ -21,14 +22,17 @@ function Trend() {
         </h2>
         <div className="flex justify-center md:justify-between flex-wrap gapx-[23px] gap-7 md:gap-y-14">
           {highReviewsData.map((Trend, i) => (
-            <Card {...Trend} key={i} className="w-[319px]"></Card>
+            <Link to={`/high-reviews/${i}`} key={i}>
+              <Card {...Trend} className="w-[319px] cursor-pointer" />
+            </Link>
+            // <Card {...Trend} key={i} className="w-[319px]"></Card>
           ))}
         </div>
         <div className="text-center mt-7 md:mt-14 space-y-2 md:space-y-5">
           <p className="text-lg sm:text-[22px] text-[#1E1E1E]">
             Discover more cool restaurants
           </p>
-          <MyButton onClick={() => setMore(more + 3)}>Show more</MyButton>
+          <MyButton onClick={() => setMore(more + 4)}>Show more</MyButton>
         </div>
       </section>
     </>

@@ -1,3 +1,4 @@
+import Hero from "./Details/Hero";
 import Carousel from "./Home/Carousel";
 import Category from "./Home/Category";
 import Explore from "./Home/Explore";

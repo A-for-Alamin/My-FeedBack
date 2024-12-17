@@ -1,11 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 
-// 1. import `NextUIProvider` component
 import { NextUIProvider } from "@nextui-org/react";
 import AppLayout from "./Applayout";
 import Home from "./Components/Home";
-import Restaurants from "./Components/Restaurants";
+import Details from "./Components/Details";
 
 function App() {
   const router = createBrowserRouter([
@@ -18,8 +17,12 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/restaurants",
-          element: <Restaurants />,
+          path: "/top-rated/:id",
+          element: <Details type="topRated" />,
+        },
+        {
+          path: "/high-reviews/:id",
+          element: <Details type="highReviews" />,
         },
       ],
     },

@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import Card from "../Common/Card";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 export default function Carousel() {
   const TopRatedDatas = datas
@@ -54,7 +55,10 @@ export default function Carousel() {
           >
             {TopRatedDatas.map((cardData, i) => (
               <SwiperSlide className="flex justify-center" key={i}>
-                <Card {...cardData} className="w-[285px]" />
+                <Link to={`/top-rated/${i}`} key={i}>
+                  <Card {...cardData} className="w-[285px]" />
+                </Link>
+                {/* <Card {...cardData} className="w-[285px]" /> */}
               </SwiperSlide>
             ))}
           </Swiper>
