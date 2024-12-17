@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import datas from "./lib/large_business_data.json";
 import Hero from "./Details/Hero";
+import Discover from "./Details/Discover";
 
 function Details({ type }) {
   const { id } = useParams();
@@ -26,6 +27,7 @@ function Details({ type }) {
   return (
     <>
       <Hero {...showData} />
+      <Discover />
 
       <div className="container px-5 py-10">
         <h1 className="text-3xl font-bold mb-5">{showData.name}</h1>
