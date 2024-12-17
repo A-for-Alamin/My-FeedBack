@@ -1,4 +1,4 @@
-import cardDatas from "../lib/Card.json";
+import datas from "../lib/large_business_data.json";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,6 +12,12 @@ import Card from "../Common/Card";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
 export default function Carousel() {
+  const TopRatedDatas = datas
+    .filter((item) => item.businessType === "Restaurant")
+    .flatMap((item) => item.company)
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 5);
+
   return (
     <>
       <section className="container mt-10 p-2 md:p-0">
@@ -46,7 +52,7 @@ export default function Carousel() {
             modules={[Navigation, Pagination]}
             className="mb-5"
           >
-            {cardDatas.map((cardData, i) => (
+            {TopRatedDatas.map((cardData, i) => (
               <SwiperSlide className="flex justify-center" key={i}>
                 <Card {...cardData} className="w-[285px]" />
               </SwiperSlide>
