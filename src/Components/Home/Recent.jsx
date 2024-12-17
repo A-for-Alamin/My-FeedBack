@@ -10,13 +10,13 @@ import { Navigation } from "swiper/modules";
 import { IoArrowBack } from "react-icons/io5";
 import { GoStarFill } from "react-icons/go";
 
-function Recent() {
+function Recent({ props }) {
   return (
     <>
       <section className="mt-10 ps-3 sm:ps-5 md:ps-10">
         <div className="py-4 md:py-7 relative">
           <h4 className="text-xl md:text-[32px] font-bold md:font-extrabold text-[#1E1E1E] mb-5">
-            Recents avtivities
+            {props}
           </h4>
           <Swiper
             spaceBetween={30}
@@ -49,7 +49,7 @@ function Recent() {
                   <div className="min-w-[330px] w-[457px]  rounded-xl bg-[#F8F8F8] overflow-hidden p-4">
                     <div className="flex items-center gap-3">
                       <img
-                        src={`./img/${avatar}`}
+                        src={`../img/${avatar}`}
                         alt="avatar"
                         className="w-[60px]"
                       />
@@ -78,9 +78,9 @@ function Recent() {
                     </div>
 
                     <div className="mt-2 flex gap-2">
-                      <img src={`./img/${img1}`} />
-                      <img src={`./img/${img2}`} />
-                      <img src={`./img/${img3}`} />
+                      <img src={`../img/${img1}`} />
+                      <img src={`../img/${img2}`} />
+                      <img src={`../img/${img3}`} />
                     </div>
 
                     <a href={link} className="underline">

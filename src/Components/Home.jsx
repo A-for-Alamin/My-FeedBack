@@ -11,7 +11,7 @@ function Home() {
       <Carousel />
       <Trend />
       <Explore />
-      <Recent />
+      <Recent props="Recents avtivities" />
     </>
   );
 }

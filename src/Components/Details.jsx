@@ -4,6 +4,7 @@ import datas from "./lib/large_business_data.json";
 import Hero from "./Details/Hero";
 import Discover from "./Details/Discover";
 import Reviews from "./Details/Reviews";
+import Recent from "./Home/Recent";
 
 function Details({ type }) {
   const { id } = useParams();
@@ -31,6 +32,7 @@ function Details({ type }) {
       <Hero {...showData} />
       <Discover />
       <Reviews />
+      <Recent props="Also discover..." />
     </>
   );
 }
