@@ -5,6 +5,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import AppLayout from "./Applayout";
 import Home from "./Components/Home";
 import Details from "./Components/Details";
+import Searched from "./Components/Searched";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +24,10 @@ function App() {
         {
           path: "/high-reviews/:id",
           element: <Details type="highReviews" />,
+        },
+        {
+          path: "/searched/",
+          element: <Searched />,
         },
       ],
     },

@@ -29,7 +29,7 @@ function MoreInfo() {
             <div className="space-y-[20px] md:space-y-[37px]">
               <div className="flex gap-4 items-center">
                 <MdOutlineRestaurant className="text-2xl" />
-                <p className="underline" onClick={onOpen}>
+                <p className="underline cursor-pointer" onClick={onOpen}>
                   See the menu
                 </p>
               </div>
@@ -47,7 +47,7 @@ function MoreInfo() {
               </div>
               <div className="flex gap-4 items-center">
                 <TbBrowserMaximize className="text-2xl" />
-                <p className="underline">
+                <p className="underline cursor-pointer">
                   <a href="#">www.bellaitalia.com</a>
                 </p>
               </div>

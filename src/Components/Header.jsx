@@ -15,9 +15,22 @@ import {
   DrawerBody,
   useDisclosure,
 } from "@nextui-org/react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  const [categValue, setCategValue] = useState("");
+  const [countryValue, setCountryValue] = useState("");
+
+  const categChanged = (categEvent) => {
+    setCategValue(categEvent);
+  };
+
+  const countryChanged = (countryEvent) => {
+    setCountryValue(countryEvent);
+  };
 
   return (
     <>
@@ -35,6 +48,8 @@ function Header() {
             {/* Autocomplete from "NextUi"  */}
             <div className="flex gap-1.5 md:gap-1">
               <Autocomplete
+                value={categValue}
+                onInputChange={categChanged}
                 size="sm"
                 radius="full"
                 selectorIcon={""}
@@ -46,6 +61,8 @@ function Header() {
               </Autocomplete>
 
               <Autocomplete
+                value={countryValue}
+                onInputChange={countryChanged}
                 size="sm"
                 radius="full"
                 selectorIcon={""}
@@ -58,7 +75,15 @@ function Header() {
               </Autocomplete>
             </div>
 
-            <RiSearchLine className="bg-[#1677BD] p-2 text-[2.5rem] rounded-full text-white cursor-pointer" />
+            <Link
+              to={
+                categValue === "Restaurants" && countryValue === "Singapour"
+                  ? "/searched/"
+                  : ""
+              }
+            >
+              <RiSearchLine className="bg-[#1677BD] p-2 text-[2.5rem] rounded-full text-white cursor-pointer" />
+            </Link>
           </div>
 
           {/* MyFeedback for business Button */}
@@ -86,6 +111,8 @@ function Header() {
                     <div className="p-1 rounded-[27px] border-2 overflow-hidden space-y-1.5">
                       {/* Autocomplete from "NextUi"  */}
                       <Autocomplete
+                        value={categValue}
+                        onInputChange={categChanged}
                         size="sm"
                         radius="full"
                         label="restaurant, hotel, service...."
@@ -98,6 +125,8 @@ function Header() {
                       </Autocomplete>
 
                       <Autocomplete
+                        value={countryValue}
+                        onInputChange={countryChanged}
                         size="sm"
                         radius="full"
                         label="Singapour..."
@@ -108,9 +137,18 @@ function Header() {
                         ))}
                       </Autocomplete>
 
-                      <MyButton className="w-full" onClick={onClose}>
-                        Search...
-                      </MyButton>
+                      <Link
+                        to={
+                          categValue === "Restaurants" &&
+                          countryValue === "Singapour"
+                            ? "/searched/"
+                            : ""
+                        }
+                      >
+                        <MyButton className="w-full" onClick={onClose}>
+                          Search...
+                        </MyButton>
+                      </Link>
                     </div>
 
                     <MyButton className="text-sm lg:text-[15px] bg-black text-nowrap mt-10">

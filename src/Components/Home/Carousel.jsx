@@ -58,7 +58,6 @@ export default function Carousel() {
                 <Link to={`/top-rated/${i}`} key={i}>
                   <Card {...cardData} className="w-[285px]" />
                 </Link>
-                {/* <Card {...cardData} className="w-[285px]" /> */}
               </SwiperSlide>
             ))}
           </Swiper>

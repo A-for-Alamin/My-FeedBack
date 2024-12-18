@@ -1,7 +1,8 @@
-import { GoStarFill } from "react-icons/go";
+import { GoSortDesc, GoStarFill } from "react-icons/go";
 import datas from "../lib/large_business_data.json";
 import MyButton from "../Common/Button";
 import { useState } from "react";
+import { IoFilterOutline } from "react-icons/io5";
 
 function Reviews() {
   const [more, setMore] = useState(8);
@@ -15,6 +16,17 @@ function Reviews() {
     <>
       <section>
         <div className="container px-2 md:px-0 my-10">
+          <div className="mb-6 flex gap-4">
+            <MyButton className="flex items-center gap-2 bg-white border text-black">
+              <IoFilterOutline />
+              Filter
+            </MyButton>
+            <MyButton className="flex items-center gap-2 bg-white border text-black">
+              <GoSortDesc />
+              Sort
+            </MyButton>
+          </div>
+
           {ReviewsDatas.map(({ name, comment, date }, index) => (
             <div
               className="flex items-start gap-3 p-7 rounded-2xl bg-[#F8F8F8] mb-5"
