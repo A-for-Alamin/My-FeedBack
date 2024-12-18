@@ -4,9 +4,7 @@ import { FaClock, FaLocationDot } from "react-icons/fa6";
 function Hero({ heroimg, logo, name, rating, reviews, description, address }) {
   return (
     <>
-      <section
-        className={`h-[30vh] md:h-[75vh] bg-[url(./img/${heroimg})] bg-cover bg-center bg-no-repeat relative`}
-      >
+      <section className="h-[30vh] md:h-[75vh] bg-[url(../img/Restaurant/Singapore/hero1.png)] bg-cover bg-center bg-no-repeat relative">
         <div className="container py-10 md:py-28 text-white text-[17] md:text-[19px]">
           <div className="md:w-1/2 px-2 md:px-0">
             <h2 className="text-[30px] sm:text-[40px] md:text-[52px] font-semibold leading-[40px] md:leading-[65px]">

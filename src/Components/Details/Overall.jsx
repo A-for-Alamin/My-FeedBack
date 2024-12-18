@@ -33,10 +33,11 @@ function Overall() {
             </div>
           </div>
           <div className="md:w-[40rem]">
-            {nums.map(({ num, ratnum }) => (
-              <div className="flex gap-4 text-lg">
+            {nums.map(({ num, ratnum }, i) => (
+              <div className="flex gap-4 text-lg" key={i}>
                 <p className="text-nowrap text-[#484848]">{ratnum} stars</p>
                 <Slider
+                  aria-label="Player progress"
                   color="primary"
                   defaultValue={num}
                   hideThumb={true}

@@ -6,6 +6,7 @@ import Discover from "./Details/Discover";
 import Reviews from "./Details/Reviews";
 import Recent from "./Home/Recent";
 import MoreInfo from "./Details/MoreInfo";
+import Overall from "./Details/Overall";
 
 function Details({ type }) {
   const { id } = useParams();
@@ -33,6 +34,7 @@ function Details({ type }) {
       <Hero {...showData} />
       <Discover />
       <MoreInfo />
+      <Overall />
       <Reviews />
       <Recent props="Also discover..." />
     </>

@@ -25,7 +25,7 @@ function Header() {
         <div className="container flex items-center justify-between gap-28 md:gap-4 py-2 md:py-4">
           {/* Website Logo  */}
           <img
-            src="./img/logo.png"
+            src="../img/logo.png"
             alt="Website Logo"
             className="scale-85 lg:scale-100"
           />
