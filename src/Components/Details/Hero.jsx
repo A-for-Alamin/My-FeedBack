@@ -32,7 +32,7 @@ function Hero({ heroimg, logo, name, rating, reviews, description, address }) {
               <span className="me-2">
                 <FaLocationDot />
               </span>
-              {address}
+              {address ? address : "Singapour, Bishan-Ang Mo Kio Park "}
             </p>
             <p className="flex items-center">
               <span className="me-2">

@@ -65,7 +65,7 @@ function Discover() {
           <Modal
             isOpen={isOpen}
             onOpenChange={onOpenChange}
-            className="scale-150"
+            className="md:scale-150"
           >
             <ModalContent>
               {(onClose) => (
