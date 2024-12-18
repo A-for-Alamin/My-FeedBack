@@ -1,3 +1,4 @@
+import MoreInfo from "./Details/MoreInfo";
 import Carousel from "./Home/Carousel";
 import Category from "./Home/Category";
 import Explore from "./Home/Explore";
@@ -8,6 +9,7 @@ function Home() {
   return (
     <>
       <Category />
+      <MoreInfo />
       <Carousel />
       <Trend />
       <Explore />
